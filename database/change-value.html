@@ -34,10 +34,10 @@ th,td {
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200 ) {
-        docu.getElementById("txtHint").innerHTML = this.responseText;
+        document.getElementById("txtHint").innerHTML = this.responseText;
       }
     };
-    xhttp.open("GET", "getcustomer.asp?q=" + str, true);
+    xhttp.open("GET", "getcustomer.php?q=" + str, true);
     xhttp.send();
   }
 </script>
